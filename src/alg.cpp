@@ -38,7 +38,7 @@ int countPairs2(int *arr, int len, int value) {
     }
   }
   delete[] tempArr;
-  return count;
+  return (count + tmp - tmp);
 }
 int countPairs3(int *arr, int len, int value) {
   int count = 0;
