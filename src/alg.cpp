@@ -29,9 +29,6 @@ nt countPairs2(int *array, int len, int target) {
     return count;
 }
 
-
-  return count;
-}
 int countPairs3(int *arr, int len, int value) {
   int count = 0;
   for (int i = 0; i < len; i++) {
