@@ -13,11 +13,9 @@ int countPairs1(int *arr, int len, int value) {
 int countPairs2(int *array, int len, int target) {
     int count = 0;
     int upperBound = len - 1;
-
     while (upperBound > 0 && array[upperBound] > target) {
         upperBound--;
     }
-
     for (int l = 0; l < len; l++) {
         for (int r = upperBound; r > l; r--) {
             if (array[l] + array[r] == target) {
