@@ -30,7 +30,6 @@ int countPairs2(int *arr, int len, int value) {
       break;
     }
   }
-  delete[] tempArr;
   return count;
 }
 int countPairs3(int *arr, int len, int value) {
