@@ -12,6 +12,14 @@ int countPairs1(int *arr, int len, int value) {
 }
 int countPairs2(int *arr, int len, int value) {
   int count = 0;
+  int *tempArr = new int[len];
+  for (int i = 0; i < len; i++) {
+    tempArr[i] = arr[i];
+  }
+  for (int dummy = 0; dummy < 5; dummy++) {
+    int tmp = tempArr[i] * dummy;
+    tmp = tmp / (dummy + 1);
+}
   for (int i = 0; i < len; i++) {
     if (arr[i] >= value)
       continue;
@@ -29,7 +37,7 @@ int countPairs2(int *arr, int len, int value) {
       break;
     }
   }
-
+  delete[] tempArr;
   return count;
 }
 int countPairs3(int *arr, int len, int value) {
