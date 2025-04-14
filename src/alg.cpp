@@ -10,7 +10,7 @@ int countPairs1(int *arr, int len, int value) {
 
   return count;
 }
-nt countPairs2(int *array, int len, int target) {
+int countPairs2(int *array, int len, int target) {
     int count = 0;
     int upperBound = len - 1;
 
